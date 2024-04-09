@@ -1,0 +1,79 @@
+html,body{
+    /* height: 100%; */
+	position: relative;
+    font-family: 'ChulabhornLikitText';
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+  
+
+.position-data{
+    width:  100%;
+    background-color: #ccc;
+    border-radius: 20px;
+    /* padding: 10px; */
+    padding-right: 0px;
+    margin-bottom: 50px;
+}
+
+.name-patient{
+    margin-top: 150px;
+    display: flex;
+    margin-left: 120px;
+    width: 100%;
+    font-size: 20px;
+}
+
+h3{
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    width: 500px;
+}
+
+.position-history{
+    width: 100%;
+    /* padding: 10px; */
+    padding-left: 20px;
+    padding-right: 0px;
+    margin-bottom: 50px;
+}
+
+table{
+    margin: auto; /* ทำให้ตารางอยู่ตรงกลาง */
+    width: auto; /* กำหนดความกว้างของตารางให้เป็นขนาดของข้อมูล */
+    border-spacing: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    border: 2px solid gainsboro;
+}
+tr,td,th{
+    border-collapse: collapse;
+}
+th,td{
+    padding: 15px 25px;
+}
+th{
+    background: gainsboro;
+}
+td button{
+    display: inline-block;
+    padding: 10px; 
+    border-radius: 8px;
+    margin: 0px 5px;
+}
+tr:nth-child(even){
+    background-color:white; 
+}
+
+p{
+    padding-left: 20px;
+}

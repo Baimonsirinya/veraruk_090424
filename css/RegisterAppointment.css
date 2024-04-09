@@ -1,0 +1,343 @@
+
+html,body{
+    height: 100%;
+	position: relative;
+    font-family: 'ChulabhornLikitText';
+}
+
+.imageposition {
+    text-align: center;
+    margin-top: 150px;
+}
+
+p{
+    font-size: 20px;
+    padding: 20px 70px 20px;
+}
+
+#showFormAppoint {
+    display: none;
+}
+
+.container-ID {
+    display: grid;
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /* width: auto;
+    height: auto; */
+}
+
+.card-header {
+    margin-top: 30px;
+    text-align: center;
+    /* background-color: #fff; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button-submit {
+    justify-content: center;
+    display: inline-block;
+    padding: 8px 25px;
+    font-size: 12px;
+    background-color: #ffe838;
+    border: 3px solid #fff28d; 
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 15px 250px;
+}
+
+#font-ID{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.text-box{
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: 1px solid gray;
+}
+
+
+.step {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.step li {
+    margin-left: 100px;
+    margin-right: 100px; /* ระยะห่างระหว่างขั้นตอน */
+    font-size: 18px;
+    position: relative;
+}
+
+.step li.current {
+    font-weight: bold; /* ตัวหนา */
+}
+
+.step li::before {
+    content: attr(data-step); /* ใช้ค่าของแอตทริบิวต์ data-step ในการแสดงตัวเลขบนวงกลม */
+    position: absolute;
+    left: 50%; /* จัดตำแหน่งตัวเลขให้อยู่ตรงกลาง */
+    transform: translateX(-50%); /* ย้ายตำแหน่งตัวเลขให้อยู่ตรงกลาง */
+    width: 40px; /* ขนาดวงกลม */
+    height: 40px; /* ขนาดวงกลม */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    background-color: #ccc; /* สีของวงกลม */
+    text-align: center;
+    line-height: 40px; /* ให้ตัวเลขอยู่ตรงกลาง */
+    color: rgb(0, 0, 0); /* สีตัวเลข */
+    font-size: 16px; /* ขนาดตัวเลข */
+}
+
+.step li span {
+    display: block; /* ทำให้ข้อความใน span เป็นบล็อกแยกออกมา */
+    text-align: center; /* จัดตำแหน่งข้อความใน span ให้อยู่ตรงกลาง */
+    margin-top: 50px; /* ระยะห่างของข้อความใน span กับวงกลม */
+}
+
+.step li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 17px;
+    width: 300px; /* ความยาวของเส้นเชื่อม */
+    height: 5px;
+    background-color: #ccc; /* สีของเส้นเชื่อม */
+    z-index: -1; /* ตำแหน่งของเส้นเชื่อมอยู่หลังวงกลม */
+}
+
+.step li:last-child::after {
+    display: none; /* ไม่แสดงเส้นเชื่อมสำหรับขั้นตอนสุดท้าย */
+}
+
+.step li.current::before, .step li.current::after {
+    background-color: #ffd700; /* เปลี่ยนสีของวงกลมและเส้นเชื่อมสำหรับขั้นตอนปัจจุบัน */
+}
+
+
+
+
+.check-box {
+    display: flex;
+    justify-content: center; /* จัดให้เนื้อหาอยู่ตรงกลาง */
+    gap: 20px;
+}
+
+.checkbox-container1 {
+    display: inline-block;
+    align-items: center;
+    width: 300px;
+    padding: 30px;
+    box-shadow: 0px 20px 50px #D9DBDF;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+.checkbox-container2 {
+    display: inline-block;
+    align-items: center;
+    width: 300px;
+    padding: 30px;
+    box-shadow: 0px 20px 50px #D9DBDF;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+.checkbox-container1:hover {
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.checkbox-container2:hover {
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.checkbox-label {
+    margin-right: 10px;
+    font-size: 20px;
+    vertical-align: middle; /* จัดให้ข้อความอยู่ตรงกลางของ radio button */
+}
+
+.checkbox-input {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle; /* จัดให้ radio button อยู่ตรงกลางของข้อความ */
+}
+
+#nextButton {
+    display: none;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.button-submit{
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #ffd700;
+    border: 3px solid #ffd700; 
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'ChulabhornLikitText';
+}
+
+.fa-solid{
+    padding-left: 20px;
+}
+
+
+.container {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+  
+.square:hover {
+      -webkit-transform: translate(20px, -10px);
+      -ms-transform: translate(10px, -10px);
+      transform: translate(10px, -10px);
+      -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+  
+.square{
+    width: 300px;
+    height: auto;
+    display: flex; /* เพิ่ม Flexbox */
+    flex-wrap: wrap;
+    justify-content: center; /* จัดตำแหน่งแนวนอนให้เริ่มต้นที่ตรงกลาง */
+    background: white;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 0px 20px 50px #D9DBDF;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+    
+  }
+  
+.mask{
+    position: absolute;
+}
+  
+.square img{
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+  
+.h1{
+    margin-top: 320px;
+    font-size: 24px;
+}
+  
+.square p {
+   text-align: justify; 
+   padding-left: 30px;
+   padding-right: 30px;
+   font-size: 12px;
+   color: #C8C8C8;
+   line-height: 18px;
+   overflow: hidden; /* เพื่อให้ข้อความที่เกินขนาดมากกว่าสามบรรทัดถูกซ่อน */
+   max-height: 54px; /* 27px * 3 lines */
+   text-overflow: ellipsis
+}
+
+.container-doctors{
+    display: flex; /* เพิ่ม Flexbox */
+    justify-content: center;
+}
+
+.button-appoint{
+    background-color: rgb(215, 215, 215);
+    border: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+    align-self: start;
+    color: white;
+    width: 300px;
+    padding: 10px 18px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'ChulabhornLikitText';
+}
+
+.button-appoint:hover {
+    background-color: #ffd700; /* เปลี่ยนสีพื้นหลังเมื่อชี้ */
+    color: black; /* เปลี่ยนสีข้อความเป็นสีดำเมื่อชี้ */
+    border: 3px solid #ffd700; /* เปลี่ยนสีขอบ */
+}
+
+.doctorname-style{
+    background-color: #ffd700;
+    text-align: center;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.positon-doctor{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-goback{
+    padding: 8px 10px;
+    font-size: 16px;
+    background-color: #ccc;
+    border: 3px solid #ccc; 
+    border-radius: 8px;
+    text-decoration: none;
+    width: 100px;
+    font-family: 'ChulabhornLikitText';
+}
+
+.position-goback{
+    display: block;
+    margin-left: 200px;
+    
+}
+
+.fa-circle-chevron-left{
+    padding: 0%;
+}
+
+#ShowTextSuccess {
+    display: none;
+}
+
+#ShowTextSuccess p {
+    text-align: center;
+    margin-top: 20px;
+}

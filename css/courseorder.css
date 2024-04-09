@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center; /* จัดให้เนื้อหาอยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลางแนวตั้ง */
+    margin: 0; /* ไม่มีระยะห่างรอบขอบของ container */
+  }
+  
+form[name="checkoutForm"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%; /* กำหนดความกว้างของ form */
+    padding: 20px; /* เพิ่มระยะห่างด้านในของ form */
+    border: 1px solid #ccc; /* เพิ่มเส้นขอบให้กับ form */
+    border-radius: 10px; /* กำหนดรูปร่างของมุมของ form */
+    background-color: #f9f9f9; /* กำหนดสีพื้นหลังของ form */
+}
+
+form[name="checkoutForm"] .position-text {
+    display: grid;
+    justify-content: center; /* จัดข้อความไปทางซ้าย */
+}
+
+h3{
+    text-align: center;
+}
+
+button.omise-checkout-button {
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 1px solid rgb(26, 86, 240);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90px;
+    font-family: 'ChulabhornLikitText';
+  }
+  
+  /* ปรับสีพื้นหลังเมื่อเมาส์ชี้ที่ปุ่ม */
+button.omise-checkout-button:hover {
+    background-color: rgb(26, 86, 240); /* เฉดสีเขียวเข้ม */
+    color: rgb(255, 255, 255);
+  }

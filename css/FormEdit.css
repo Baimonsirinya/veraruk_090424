@@ -1,0 +1,182 @@
+p{
+    font-size: 20px;
+}
+
+.container-ID{
+    position: relative;
+    margin-top: 150px;
+    margin-left: 37%;
+    margin-bottom: 80px;
+    /* margin-right: -12px; */ 
+} 
+
+.card {
+    position: relative;
+    margin-left: -12px;
+    left: 270px;
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 1000px;
+    height: auto;
+}
+.card-header {
+    text-align: center;
+    /* background-color: #fff; */
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.button-submit {
+    justify-content: center;
+    display: inline-block;
+    padding: 8px 25px;
+    font-size: 15px;
+    background-color: #ffe838;
+    border: 3px solid #fff28d; 
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 15px 250px;
+}
+#font-ID{
+    font-size: 16px;
+}
+
+.font-text{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 24px;
+    padding: 20px 10px 20px;
+}
+
+.text-box{
+    border-radius: 10px;
+    padding: 5px 5px;
+    border: 1px solid gray;
+}
+
+#course_id_input{
+    border: none;
+}
+
+.ShowBotton {
+    justify-content: center;
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 15px;
+    background-color: #04AA6D;
+    border: 3px solid #04AA6D;  
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'ChulabhornLikitText';
+}
+
+
+.container-ID img {
+    width: 300px;
+    height: auto;
+    padding-top: 15px; 
+}
+
+.button-save {
+    background-color: #ffd700;
+    border: 1px solid #ffd700; 
+    color: black;
+    width: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 70px;
+    margin-bottom: 20px; */
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'ChulabhornLikitText';
+}
+
+.button-container {
+    display: flex;
+    /* align-items: center; */
+}
+
+.button-delete{
+    background-color:  #ea5555;
+    border: 1px solid #ea5555;
+    color: black;
+    width: 50px;
+    padding: 7px 12px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 70px;
+    margin-bottom: 20px; */
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'ChulabhornLikitText';
+}
+
+.button-save,
+.button-delete {
+    margin-left: 10px; /* ปรับระยะห่างตามที่ต้องการ */
+}
+
+.submit-button{
+    justify-content: center;
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 12px;
+    background-color: #ffd700;
+    border: 3px solid #ffd700; 
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    font-family: 'ChulabhornLikitText';
+}
+
+.display {
+    margin-top: 20px;
+}
+
+.submit-buttonOuter {
+    justify-content: center;
+    display: inline-block;
+    padding: 8px 25px;
+    font-size: 15px;
+    background-color: #ffffff;
+    border: 3px solid #ffd700; 
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 15px 200px;
+    font-family: 'ChulabhornLikitText';
+}
+
+.submit-buttonOuter:hover{
+    background-color: #ffd700;
+    border: 3px solid #ffd700; 
+}
+
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    display: none;
+}
