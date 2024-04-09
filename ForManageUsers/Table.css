@@ -1,0 +1,84 @@
+/* @font-face {
+    font-family: 'ChulabhornLikitText';
+    src: url('fonts/ChulabhornLikitText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+body {
+    font-family: 'ChulabhornLikitText';
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    position: sticky;
+    z-index: 1;
+    left: 10%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 80%;
+    height: 100px;
+    border-spacing:0 ;
+    background-color:whitesmoke;
+    text-align: center;
+    border: 2px solid gainsboro;
+}
+tr,td,th{
+    border-collapse: collapse;
+}
+th,td{
+    padding: 15px 15px;
+}
+th{
+    background: gainsboro;
+}
+td button{
+    display: inline-block;
+    padding: 10px; 
+    border-radius: 8px;
+    margin: 0px 5px;
+}
+
+
+tr:nth-child(even){
+    background-color:white; 
+}
+
+.button-edit {
+    background-color:  #ccc;
+    border: #ccc;
+    color: black;
+    width: 90px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* display: block;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 70px;
+    margin-bottom: 20px; */
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'ChulabhornLikitText';
+}
+
+.button-delete{
+    background-color:  #ea5555;
+    border: #ea5555;
+    color: black;
+    width: 90px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* display: block;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 70px;
+    margin-bottom: 20px; */
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'ChulabhornLikitText';
+}
