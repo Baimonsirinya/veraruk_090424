@@ -1,0 +1,440 @@
+.container{
+    /* margin-top: 100px; */
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin-top: 70px;
+    justify-content: center; /* จัดเรียงศูนย์กลาง */
+    width: 80%;
+    height: 100%;
+    margin-left: 20%; /* เพิ่ม margin-left เท่ากับความกว้างของ sidebar */
+}
+
+/*----------วันที่--------------*/
+#date_appoint{
+    font-size: 14px;
+    padding: 7px;
+    margin: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+
+}
+.select_date{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.select_date label{
+    padding: 10px;
+}
+/*-----------------ด้านข้าง----------**/
+
+.sidebar {
+    margin-top: 75px;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background:white;
+    border-right: 1.5px solid gainsboro;
+    z-index: 1; /* เพิ่ม z-index เพื่อให้ sidebar แสดงบน .content */
+}
+
+
+.side-nav{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.side-nav a:link, a:visited {
+    background-color: white;
+    border: 2px solid gainsboro;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 50px;
+    box-shadow: 2px 2px 1px gainsboro;
+}
+
+.side-nav a:hover, a:active {
+    background-color: gray;
+    color: white;
+}
+/*------------------------------------------*/
+table{
+    margin: auto; /* ทำให้ตารางอยู่ตรงกลาง */
+    width: auto; /* กำหนดความกว้างของตารางให้เป็นขนาดของข้อมูล */
+    border-spacing: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    border: 2px solid gainsboro;
+}
+
+tr,td,th{
+    border-collapse: collapse;
+}
+th,td{
+    padding: 15px 25px;
+}
+th{
+    background: gainsboro;
+}
+td button{
+    display: inline-block;
+    padding: 10px; 
+    border-radius: 8px;
+    margin: 0px 5px;
+}
+tr:nth-child(even){
+    background-color:white; 
+}
+/*------------------------------------------*/
+.button-check{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+  }
+  
+/* .button-check:hover {
+    background-color: #04AA6D;
+    color: white;
+  }  */
+.add-data{
+    background-color:white;
+    border: 2px solid #FFD700; 
+}
+.add-data:hover{
+    background-color:#FFD700; 
+}
+
+
+/*-----------------------------------*/
+a#button-add-booking{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 10px;
+    background-color:  white;
+    text-decoration: none; 
+    border: 2px solid #04AA6D;
+    border-radius: 8px;
+    color: black;
+    width: 250px;;
+}
+#button-add-booking:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  
+/*-------------------------------------form_add-check------------------------------*/
+.popup-form{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.form-container{
+    background-color: #fefefe;
+    margin: 120px auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 900px;
+    height: 400px;
+    
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.input-field {
+    width: calc(40% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 10px;
+}
+.input-date{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    width: 20%;
+    font-family: 'ChulabhornLikitText';
+}
+
+.position-button{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+label.patientid{
+    font-size: 16px;
+    padding: 15px 0px;
+    margin: 10px 0px;
+}
+.label{
+    margin: 15px 0px;
+}
+.input-row {
+    display: flex; /* ให้แสดงผลแบบ Flexbox */
+    align-items: center; /* จัดให้ภายในแนวดิ่งกึ่งกลาง */
+    text-align: center;
+}
+.input-row label {
+    margin-right: 8px; /* เพิ่มระยะห่างระหว่าง label */
+}
+
+.input-row1 {
+    display: flex; /* ให้แสดงผลแบบ Flexbox */
+    align-items: center; /* จัดให้ภายในแนวดิ่งกึ่งกลาง */
+    width: 65%;
+}
+.input-row1 label {
+    margin-right: 15px; /* เพิ่มระยะห่างระหว่าง label */
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+.data-patient{
+    margin-bottom: 15px;
+}
+  
+.check-doctor{
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    background-color:  white; 
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    color: black;
+    width: 200px;;
+    margin-left: 10px;
+}
+.check-doctor:hover {
+    background-color: #ccc ;
+}
+
+
+#date_present{
+    border: none;
+    font-size: 16px;
+}
+
+#patient_id{
+    border: none;
+    font-size: 16px;
+}
+
+input#systolic.input-field{
+    width: 50px;
+}
+
+input#diastolic.input-field{
+    width: 50px;
+}
+
+.content-result{
+    display: grid;
+    justify-content: center;
+
+}
+#search-box{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    height: 10px;
+    border: 1px solid gray;
+}
+
+#button-allappoint{
+    display: none;
+}
+
+#appointall{
+    background-color: #FFD700;
+    text-align: center;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    /* margin-top: 300px; */
+    margin-bottom: 100px;
+    width: 50%;
+    font-family: 'ChulabhornLikitText';
+} 
+#appointall:hover{
+    box-shadow: 8px 8px 5px gainsboro;
+}
+
+.position-checkdoctor{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*------------------------------booking---------------------------*/
+#appointment_results{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px; /* ระยะห่างระหว่างคอลัมน์ */
+    grid-row-gap: 10px;
+    margin: 30px;
+}
+#time_booking{
+    padding: 10px;
+    background:rgba(128, 128, 128, 0.24);
+    text-align: center;
+    color: #aaa;
+}
+#time_free{
+    padding: 10px;
+    background: white;
+    border: 1px solid gainsboro;
+    text-align: center;
+}
+
+/***************************************/
+#button-fecth{
+    padding: 8px;
+    background: white ;
+    border: 1px solid #4CAF50; 
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+#button-fecth:hover{
+    background:#4CAF50 ;
+    color: white;
+}
+.button-fecth-appoint{
+    display: flex;
+    justify-content: center;
+}
+
+#doctor_select,#appointment_date{
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+/*---------------------------------------------- popup เวชระเบียน -----------------------------------------------------*/
+
+.bg-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* สีพื้นหลังทึบ */
+    z-index: 999;
+}
+
+.modal-content{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 850px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"],input[type="number"],input[type="date"],select{
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+    margin: 8px;
+    padding: 2px;
+    padding-left: 5px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    padding-top: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#submit{
+    background-color: #F8D314;
+    border: 3px solid #FFE352;
+    border-radius: 10px;
+    margin-left: 330px;
+    margin-right: 330px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.sweetalert-zindex {
+    z-index: 1000 !important;
+}
+
+.add-data-medical{
+    background-color:#4CAF50;
+    border: 2px solid #4CAF50; 
+}

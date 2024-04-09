@@ -1,0 +1,38 @@
+.edit-general{
+    display: grid;
+    justify-content: center;
+    background-color: #F8D314;
+    border: 3px solid #FFE352;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    width: 100px;
+    align-items: center;
+}
+
+.results_data{
+    display: grid;
+    /* padding: 30px;
+    align-items: center;*/
+    justify-content: center;
+    margin-top: 160px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+ }
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+

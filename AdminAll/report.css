@@ -1,0 +1,48 @@
+.container{
+    /* margin-top: 150px; */
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content {
+    margin-top: 20px;
+    justify-content: center; /* จัดเรียงศูนย์กลาง */
+    width: 80%;
+    height: 100%;
+}
+
+
+table{
+    margin: auto; /* ทำให้ตารางอยู่ตรงกลาง */
+    width: auto; /* กำหนดความกว้างของตารางให้เป็นขนาดของข้อมูล */
+    border-spacing: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    border: 2px solid gainsboro;
+}
+tr,td,th{
+    border-collapse: collapse;
+}
+th,td{
+    padding: 15px 25px;
+}
+th{
+    background: gainsboro;
+}
+td button{
+    display: inline-block;
+    padding: 10px; 
+    border-radius: 8px;
+    margin: 0px 5px;
+}
+tr:nth-child(even){
+    background-color:white; 
+}
+
+h2{
+    text-align: center;
+    margin-top: 150px;
+}
